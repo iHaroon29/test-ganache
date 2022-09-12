@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoteChain</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar-wrapper">
+      <div class="logo-holder">
+        <img src="./Assets/logoipsum-221.svg" alt="logo" />
+      </div>
+      <div class="nav-link-holder">
+        <ul class="nav-link-list" style="justify-content: end">
+          <li class="link special-btn">
+            <button id="logoutBtn">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="dashboard-holder">
+      <nav class="side-nav">
+        <ul>
+          <li><button id="overviewSectionBtn">Overview</button></li>
+          <li><button id="addVoterSectionBtn">Add Voter</button></li>
+          <li>
+            <button id="addCandidateSectionBtn">Add Candidate</button>
+          </li>
+          <li>
+            <button id="changeElectionStateSectionBtn">
+              Change Election State
+            </button>
+          </li>
+          <li>
+            <button id="electionResultsSectionBtn">Election Results</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="dashboard-main">
+        <div class="overview-body" flag="true">
+          <div class="overview-text">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum error totam nemo, illo atque voluptate magnam iusto
+              quasi similique, facere facilis amet debitis natus suscipit harum
+              repellat maxime vel vero sed non. Necessitatibus quidem beatae
+              optio ipsum molestias, quis esse mollitia aliquam commodi!
+              Aliquid, maxime, ipsa recusandae quo facere nam quisquam porro
+              corrupti dolorum incidunt pariatur quod inventore, asperiores aut
+              iure. Neque sint reiciendis velit soluta, error sequi deleniti,
+              nesciunt, quos natus placeat laboriosam blanditiis expedita. Dolor
+              repellat dolorum accusantium quos et qui delectus neque fuga
+              voluptatibus voluptas suscipit, mollitia aut sint laboriosam sunt
+              ab? Consequatur quas amet, enim ipsum provident laboriosam aut
+              unde nostrum ipsa! Ullam perferendis expedita nihil, sapiente
+              animi quisquam exercitationem aut fugiat consequuntur libero
+              quidem qui harum facere architecto porro magni recusandae
+              reiciendis vitae praesentium ipsam numquam sed. Dignissimos
+              cupiditate ducimus, natus animi cum vel distinctio! Necessitatibus
+              incidunt, officia beatae ab dolor laboriosam eveniet delectus cum
+              voluptates, quos deserunt aut aliquam, distinctio eum repellat
+              deleniti quidem ipsam maiores soluta accusamus sit? Sunt porro
+              magnam omnis illo repellat voluptatibus beatae facere delectus.
+              Vitae quis et tenetur voluptate illum sed alias in ut eligendi
+              praesentium commodi blanditiis deserunt molestias asperiores,
+              doloremque nulla mollitia velit eveniet fugit numquam! Maxime?
+            </p>
+          </div>
+        </div>
+        <div class="add-voter-body" flag="false">
+          <div class="add-voter-holder">
+            <div class="voter-card-holder">
+              <form
+                action="#"
+                class="voter-wallet-address-form"
+                id="voterWalletAddressForm"
+              ></form>
+              <div class="add-btn-holder">
+                <button class="add-voter-btn" id="addVoterBtn">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="change-election-state-body" flag="false">
+          <div class="election-state-holder">
+            <div class="phase-data-holder"></div>
+            <button
+              class="update-election-state-btn form-submit-btn"
+              id="updateElectionStateBtn"
+            >
+              Change State
+            </button>
+          </div>
+        </div>
+        <div class="add-candidate-body" flag="false">
+          <div class="add-candidate-holder">
+            <h2>Add Candidates</h2>
+            <div class="candidate-added">
+              <form action="#" id="addCandidateForm">
+                <input type="text" placeholder="Name" name="name" required />
+                <input
+                  type="number"
+                  min="35"
+                  max="55"
+                  placeholder="Age"
+                  name="age"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Party Name"
+                  required
+                  name="party"
+                />
+                <input
+                  type="text"
+                  placeholder="Qualification"
+                  required
+                  name="qualification"
+                />
+                <button class="form-submit-btn" id="addCandidateFormBtn">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- <div class=""></div> -->
+          <h2>Added Candidates</h2>
+          <div class="added-candidates-holder"></div>
+        </div>
+        <div class="election-results-body" flag="false">
+          <!-- <div class="election-result-holder">
+            <div class="candidate-details">
+              <div class="img-holder">
+                <img src="#" alt="candidate-img" />
+              </div>
+              <div class="text-holder">
+                <h2>Name</h2>
+                <h2>Age</h2>
+                <h2>Party Member</h2>
+              </div>
+              <div class="election-details">
+                <p>No of votes secured</p>
+              </div>
+            </div>
+            <div class="candidate-details">
+              <div class="img-holder">
+                <img src="#" alt="candidate-img" />
+              </div>
+              <div class="text-holder">
+                <h2>Name</h2>
+                <h2>Age</h2>
+                <h2>Party Member</h2>
+              </div>
+              <div class="election-details">
+                <p>No of votes secured</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="./JS/web3.min.js"></script>
+    <script src="./JS/truffle-contract.js"></script>
+    <script src="./JS/web3Connection.js"></script>
+    <script src="./helpers/fetch.js" type="module"></script>
+    <script src="./JS/admin.js" type="module"></script>
+  </body>
+</html>

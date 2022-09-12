@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-black: #383838;
+  --primary-white: white;
+}
+
+body {
+  width: 100%;
+  font-size: 18px;
+  color: var(--primary-black);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+button {
+  background: none;
+  font-size: inherit;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+li {
+  list-style: none;
+}
+
+.appHolder {
+  height: 100%;
+  position: relative;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #80808030;
+}
+
+.logo-holder {
+  align-self: center;
+}
+
+.nav-link-holder {
+  align-self: center;
+  width: 50%;
+}
+
+.nav-link-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.special-btn {
+  background-color: darkcyan;
+  color: var(--primary-white);
+  border-radius: 3px;
+}
+
+.body-landing-wrapper {
+  color: inherit;
+  height: 90vh;
+  position: relative;
+}
+
+.landing-img-holder {
+  height: 100%;
+  background: url(../Assets/6386.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.landing-text-holder {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  border-bottom: 1px solid #80808030;
+  padding-bottom: 5px;
+}
+
+.slider {
+  width: 80%;
+  height: 57vh;
+  display: flex;
+  border: 1px solid #80808052;
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.login-form-holder,
+.signup-form-holder {
+  width: 100%;
+  padding: 20px;
+  align-self: center;
+  margin: auto;
+}
+
+.login-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.form-submit-btn {
+  background-color: black;
+  color: var(--primary-white);
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+.slider-toggler,
+.voter-toggler {
+  width: 100%;
+  text-align: center;
+  padding: 0px 20px 10px 20px;
+}
+
+.signup-form-holder {
+  display: none;
+}
+
+.login-page-holder {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-image-holder {
+  align-self: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.slider-holder {
+  align-self: center;
+  border-left: 1px solid #80808030;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.login-form-holder,
+.signup-form-holder {
+  margin: auto;
+}
+
+#loginToggler {
+  border-bottom: 1px solid grey;
+}
+
+#signupToggler {
+  border-bottom: 1px solid grey;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.dashboard-holder {
+  display: flex;
+  min-height: 90vh;
+}
+
+.dashboard-main {
+  width: 84%;
+  padding: 10px 20px;
+}
+
+.side-nav {
+  width: 16%;
+  background: green;
+  color: white;
+}
+
+.side-nav > ul {
+  padding: 0px 15px;
+}
+
+.side-nav > ul > li {
+  border: 1px solid #ffffffa6;
+  margin: 20px 0px;
+  border-radius: 5px;
+  background: white;
+  color: var(--primary-black);
+  text-align: center;
+}
+.side-nav > ul > li > button {
+  padding: 15px;
+  width: 100%;
+}
+/* .voter-section-body {
+  width: 50%;
+  margin: auto;
+}
+
+.voter-verification-holder > form,
+.voter-registration-body > form {
+  display: flex;
+  flex-direction: column;
+}
+.cast-vote-body {
+  position: relative;
+}
+.popup-holder {
+  position: absolute;
+  right: 0px;
+  color: white;
+  min-height: 50px;
+  box-shadow: 0px 0px 0.1px 1px gray;
+  padding: 10px 10px 0px 10px;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.popup-holder > div {
+  background: green;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+} */
+
+/* Element | http://127.0.0.1:5500/src/admindashboard.html */
+
+.added-candidates-holder,
+.election-result-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+/* Inline #2 | http://127.0.0.1:5500/src/admindashboard.html */
+
+.added-candidate,
+.candidate-details {
+  width: 25%;
+  padding: 10px;
+}
+
+.add-candidate-holder {
+  width: 50%;
+  margin: auto;
+}

@@ -1,0 +1,22 @@
+{
+  "aadharCollection": [
+    {
+      "aadharNumber": "123123123",
+      "userName": "testUser1",
+      "age": "18",
+      "email": "testUser1@gmail.com"
+    },
+    {
+      "aadharNumber": "123123124",
+      "userName": "testUser2",
+      "age": "17",
+      "email": "testUser2@gmail.com"
+    },
+    {
+      "aadharNumber": "123123125",
+      "userName": "testUser3",
+      "age": "19",
+      "email": "testUser3@gmail.com"
+    }
+  ]
+}

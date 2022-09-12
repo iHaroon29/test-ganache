@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoteChain</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="login-page-holder">
+      <nav class="navbar-wrapper">
+        <div class="logo-holder">
+          <img src="./Assets/logoipsum-221.svg" alt="logo" />
+        </div>
+        <div class="nav-link-holder">
+          <ul class="nav-link-list">
+            <li class="link"><a href="./index.html">Home</a></li>
+            <li class="link"><a href="#">Support</a></li>
+            <li class="link"><a href="#">Voter Info</a></li>
+            <li class="link special-btn">
+              <a href="./login.html">Get Voting</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="slider">
+        <div class="slider-image-holder">
+          <img src="./Assets/6383.jpg" alt="slider-img" />
+        </div>
+        <div class="slider-holder">
+          <div class="slider-toggler">
+            <button class="slider-toggler-button" id="loginToggler">
+              Login
+            </button>
+            /
+            <button class="slider-toggler-button" id="signupToggler">
+              Sign Up
+            </button>
+          </div>
+          <div class="login-form-holder">
+            <form action="#" class="login-form" id="loginForm">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="userEmail"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="input"
+                type="password"
+                name="password"
+                id="userPassword"
+                placeholder="Password"
+                required
+              />
+              <button class="form-submit-btn" id="loginSubmitBtn" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="signup-form-holder">
+            <form action="#" class="signup-form" id="signupForm">
+              <input
+                class="input"
+                type="text"
+                name="username"
+                placeholder="Full Name"
+              />
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <input
+                class="input"
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+              <input
+                class="input"
+                type="tel"
+                name="phonenumber"
+                placeholder="Phone Number"
+              />
+              <button
+                class="form-submit-btn"
+                id="signupSubmitBtn"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./helpers/globalState.js" type="module"></script>
+  <script src="./helpers/formUtils.js" type="module"></script>
+  <script src="./helpers/fetch.js" type="module"></script>
+  <script src="./JS/login.js" type="module"></script>
+</html>

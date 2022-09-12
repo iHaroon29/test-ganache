@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoteChain</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar-wrapper">
+      <div class="logo-holder">
+        <img src="./Assets/logoipsum-221.svg" alt="logo" />
+      </div>
+      <div class="nav-link-holder">
+        <ul class="nav-link-list" style="justify-content: end">
+          <li class="link special-btn">
+            <button id="logoutBtn">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="dashboard-holder">
+      <nav class="side-nav">
+        <ul>
+          <li><button id="overviewBtn">Overview</button></li>
+          <li><button id="voterRegisViewBtn">Voter Register</button></li>
+          <li><button id="castBtn">Cast Vote</button></li>
+        </ul>
+      </nav>
+      <div class="dashboard-main">
+        <div class="overview-body" flag="true">
+          <div class="overview-text">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum error totam nemo, illo atque voluptate magnam iusto
+              quasi similique, facere facilis amet debitis natus suscipit harum
+              repellat maxime vel vero sed non. Necessitatibus quidem beatae
+              optio ipsum molestias, quis esse mollitia aliquam commodi!
+              Aliquid, maxime, ipsa recusandae quo facere nam quisquam porro
+              corrupti dolorum incidunt pariatur quod inventore, asperiores aut
+              iure. Neque sint reiciendis velit soluta, error sequi deleniti,
+              nesciunt, quos natus placeat laboriosam blanditiis expedita. Dolor
+              repellat dolorum accusantium quos et qui delectus neque fuga
+              voluptatibus voluptas suscipit, mollitia aut sint laboriosam sunt
+              ab? Consequatur quas amet, enim ipsum provident laboriosam aut
+              unde nostrum ipsa! Ullam perferendis expedita nihil, sapiente
+              animi quisquam exercitationem aut fugiat consequuntur libero
+              quidem qui harum facere architecto porro magni recusandae
+              reiciendis vitae praesentium ipsam numquam sed. Dignissimos
+              cupiditate ducimus, natus animi cum vel distinctio! Necessitatibus
+              incidunt, officia beatae ab dolor laboriosam eveniet delectus cum
+              voluptates, quos deserunt aut aliquam, distinctio eum repellat
+              deleniti quidem ipsam maiores soluta accusamus sit? Sunt porro
+              magnam omnis illo repellat voluptatibus beatae facere delectus.
+              Vitae quis et tenetur voluptate illum sed alias in ut eligendi
+              praesentium commodi blanditiis deserunt molestias asperiores,
+              doloremque nulla mollitia velit eveniet fugit numquam! Maxime?
+            </p>
+          </div>
+        </div>
+        <div class="voter-registration-body" flag="false">
+          <div class="popup-holder"></div>
+          <div class="voter-registration-section">
+            <div class="voter-registration-text">
+              <h2>Welcome Voter</h2>
+              <p>Please register yourself!</p>
+            </div>
+            <div class="voter-registration-body" id="">
+              <form action="#" id="voterRegisForm">
+                <input
+                  type="text"
+                  name="aadharNumber"
+                  id="aadharNumber"
+                  placeholder="Aadhar Number"
+                />
+                <input
+                  type="text"
+                  name="walletAddress"
+                  id="walletAddress"
+                  placeholder="Wallet Address"
+                />
+                <button
+                  type="submit"
+                  class="form-submit-btn"
+                  id="voterRegisBtn"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="cast-vote-body" flag="false">
+          <div class="popup-holder"></div>
+          <div class="phase-data-holder"></div>
+          <div class="added-candidates-holder"></div>
+          <!-- <h2>Select the Voter number that you want to vote</h2> -->
+          <!-- <div class="vote-form-holder">
+            <form action="#" id="voteForm">
+              <select name="contestantId" id="voteFormSelect"></select>
+              <button type="submit" class="form-submit-btn" id="voteSubmitBtn">
+                Submit
+              </button>
+            </form>
+          </div> -->
+          <!-- <div class="candidates-holder" style="display: none">
+            <div class="candidate-wrapper">
+              <div class="img-holder">
+                <img src="./Assets/6383.jpg" alt="candidate image" />
+              </div>
+              <div class="info-holder">
+                <h2>Name</h2>
+                <p>Test</p>
+                <h2>Party Name</h2>
+                <p>Test</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="./JS/web3.min.js"></script>
+    <script src="./JS/truffle-contract.js"></script>
+    <script src="./JS/web3Connection.js"></script>
+    <script src="./helpers/formUtils.js" type="module"></script>
+    <script src="./JS/dashboard.js" type="module"></script>
+  </body>
+</html>
